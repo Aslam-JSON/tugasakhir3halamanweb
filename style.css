@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+} body {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+    line-height: 1.6;
+} header {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+} nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+} nav .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+} nav ul {
+    list-style: none;
+    display: flex;
+} nav ul li {
+    margin-left: 20px;
+} nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 5px;
+    text-decoration: none;
+} nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+} .hero {
+    background-image: url('assets/yveltal.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+} .hero-content h1 {
+    font-size: 3em;
+    animation: fadeIn 1.5s ease-out;
+} .hero-content p {
+    font-size: 1.5em;
+    animation: fadeIn 2s ease-out;
+} .hero-content .cta {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    animation: fadeIn 2.5s ease-out;
+} .hero-content .cta:hover {
+    background-color: #0056b3;
+} .biodata {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+} .biodata h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007BFF; 
+} .biodata-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+} .biodata-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+} .biodata-item:hover {
+    transform: scale(1.05);
+} .biodata-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007BFF; 
+} .biodata-item p {
+    font-size: 1.1em;
+} .tentang {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+} .tentang-content {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+} .tentang-text {
+    margin-left: 20px;
+} .tentang h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #007BFF; 
+} .tentang p {
+    font-size: 1.2em;
+    color: #333; 
+} .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+} .profile-img:hover {
+    transform: scale(1.1);
+    border: 3px solid #007BFF; 
+} footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+} footer p {
+    font-size: 1.2em;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} .cta {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+} .cta:hover {
+    background-color: #0056b3;
+}
