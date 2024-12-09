@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+} body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+} header {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+} nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+} nav .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+} nav ul {
+    list-style: none;
+    display: flex;
+} nav ul li {
+    margin-left: 20px;
+} nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 5px;
+    text-decoration: none;
+} nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+} .portofolio {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+} .portofolio h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007BFF;
+} .portofolio p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+} .portofolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+} .portofolio-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+} .portofolio-card:hover {
+    transform: scale(1.05);
+} .portofolio-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #007BFF;
+} .portofolio-card ul {
+    list-style: none;
+    padding: 0;
+} .portofolio-card ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+} footer {
+    background-color: #333;
+    padding: 20px 0;
+}
